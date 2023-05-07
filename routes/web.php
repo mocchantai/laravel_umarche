@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/component-test1', [ComponentTestController::class, 'showComponent1']);
 Route::get('/component-test2', [ComponentTestController::class, 'showComponent2']);
 Route::get('/service-container-test', [LifeCycleTestController::class, 'showServiceContainerTest']);
+Route::get('/service-provider-test', [LifeCycleTestController::class, 'showServiceProviderTest']);
 
 
 require __DIR__.'/auth.php';
